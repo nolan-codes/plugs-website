@@ -15,7 +15,7 @@
 :root {
     --black: black;
     --white: white;
-    --orange: #ff8c66;
+    --orange: rgb(255, 140, 102);
     cursor: url('assets/cursor.svg'), auto;	
 }
 
@@ -151,8 +151,17 @@ a,a:visited,a:hover,a:active {
     position: absolute;
     z-index: 2;
     max-width: 90vw;
+    font-weight: bold;
+    cursor: url('assets/cursor.svg'), auto;	
 }
 
+#highlight {
+    background-color: rgb(255, 140, 102, 0.85);
+    color: var(--white);
+    font-style: italic;
+    font-weight: bolder;
+    cursor: url('assets/cursor.svg'), auto;	
+}
 
 #tech {
     background-color: var(--orange);

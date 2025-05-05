@@ -16,4 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
     buyButton.addEventListener("mouseleave", () => {
         buyButton.innerHTML = buyContent;
     });
+
+    const topHeading = document.getElementById('top-text')
+    const topContent = topHeading.textContent
+    
+    let newContent = ''
+    let startIndex = 0
+    let stopIndex  = 0
+
+    const fullLength = topContent.length
+
+    function washHighlight() {
+        if (stopIndex < fullLength) {
+            stopIndex++
+        } else if (startIndex < fullLength) {
+            startIndex++
+        } else {
+            startIndex = 0
+            stopIndex = 0
+        }
+
+        newContent = topContent.slice(0,startIndex) + '<span id="highlight">' + topContent.slice(startIndex,stopIndex) + '</span>' + topContent.slice(stopIndex, fullLength)
+
+        topHeading.innerHTML = newContent
+    }
+    
+    setInterval(washHighlight, 25)
 });
