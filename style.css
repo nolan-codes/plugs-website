@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: Adwaita Sans;
+    src: url(assets/AdwaitaSans-Regular.ttf) format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Adwaita Sans;
+    src: url(assets/AdwaitaSans-Italic.ttf) format("truetype");
+    font-style: italic;
+}
+
+:root {
+    --black: black;
+    --white: white;
+    --orange: #ff8c66;
+    cursor: url('assets/cursor.svg'), auto;	
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+h1 {
+    font-size: 12vmin;
+    margin: 0;
+}
+
+h2 {
+    font-size: 8.5vmin;
+    margin: 0;
+}
+
+h3 {
+    font-size: 6vmin;
+    margin: 0;
+}
+
+h4 {
+    font-size: 4.3vmin;
+    margin: 0;
+}
+
+h5, h6, p, a {
+    font-size: 3vmin;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 95vw;
+    top: 0;
+    left: 2.5vw;
+    z-index: 10;
+    height: calc(8vh + 2vw);
+
+    background-color: rgba(255, 255, 255, .25);  
+    backdrop-filter: blur(15px);
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    border-bottom: 0.25vh solid var(--orange);
+    border-left: 0.25vh solid var(--orange);
+    border-right: 0.25vh solid var(--orange);
+
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 2vw;
+    height: 8vh;
+    object-fit: contain;
+}
+
+header a, header a:visited, header a:hover, header a:active {
+    margin-left: auto;
+    margin-right: 3vw;
+    font-size: 4.3vmin;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+#buy-button {
+    background-color: var(--white);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4.3vh;
+    height: 8vh;
+    width: 18vh;
+    overflow: hidden;
+    border-radius: 6vh;
+    border: none;
+    position: fixed;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#buy-button:hover {
+    background-color: var(--orange);
+    cursor: url('assets/cursor.svg'), auto;	
+}
+
+#buy-button img {
+    height: 60%;
+    object-fit: contain; 
+    width: auto; 
+}
+
+a,a:visited,a:hover,a:active {
+    color: var(--black);
+    font-family: 'Adwaita Sans', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: url('assets/cursor.svg'), auto;	
+}
+
+
+#top {
+    background: var(--black);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#spline {
+    pointer-events: none;
+    z-index: 1;
+}
+
+#top h1 {
+    color: var(--orange);
+    position: absolute;
+    z-index: 2;
+    max-width: 90vw;
+}
+
+
+#tech {
+    background-color: var(--orange);
+    text-align: center;
+    margin: 0;
+    font-family: 'Adwaita Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tech div {
+    max-width: 90vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#tech i {
+    color: var(--white)
+}
+
+
+#quality {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    font-family: 'Adwaita Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quality div {
+    max-width: 90vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+#quality i {
+    color: var(--orange)
+}
+
+#final {
+    color: white;
+    font-family: 'Adwaita Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -11vmin;
+    width: calc(100% + 11vmin);
+    height: 100%;
+    background-color: var(--orange);
+    background-image: url('../assets/tiling.svg');
+    background-repeat: repeat;
+    background-size: 11vmin 9.5vmin; 
+    animation: scroll 4s linear infinite;
+    z-index: 0;
+}
+
+#final h2 {
+    background-color: var(--orange);
+    border-radius: 6vw;
+    padding: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    z-index: 1;
+    max-width: 80vw;
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(11vmin);
+    }
+}

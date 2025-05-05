@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.356787mm"
+   height="16.356787mm"
+   viewBox="0 0 16.356787 16.356787"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="rotate(-135,-13.670449,70.220146)"
+     style="fill:#ffffff;fill-opacity:1">
+    <path
+       id="text1-8-1"
+       style="font-size:9.59001px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32,wght=800';font-variation-settings:'opsz' 32, 'wght' 800;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.165059"
+       d="m 14.559309,124.99999 v 2.724 H 5.0000001 v 3.63153 h 9.5593089 v 2.72352 c 1.429654,-0.001 2.775147,-0.67608 3.631287,-1.82104 v 1.36716 c 1.533599,-0.003 2.936086,-0.8655 3.631759,-2.23224 v 1.32448 c 1.754966,0 3.177648,-1.42268 3.177646,-3.17764 5e-6,-1.75497 -1.422679,-3.17765 -3.177646,-3.17765 v 1.30602 c -0.700681,-1.35967 -2.102166,-2.21405 -3.631759,-2.21402 v 1.36716 c -0.85609,-1.14505 -2.201592,-1.81989 -3.631287,-1.82128 z" />
+  </g>
+</svg>
